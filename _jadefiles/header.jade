@@ -1,0 +1,27 @@
+mixin nav-content()
+    ul
+        li: a(href="#about") About
+        li: a(href="#articles") Technologies
+        li: a(href="#projects") Projects
+        li: a(href="https://github.com/priyankamalviya") GitHub
+        li: a(href="https://www.linkedin.com/in/priyanka-malviya-0a858862") LinkedIn
+        li: a(href="https://www.facebook.com/priyanka.malviya.148") Facebook
+
+
+.mobile-nav
+    +nav-content()
+
+header
+    .header-position
+        h1.logo Priyanka Malviya
+
+        nav.site-nav
+            +nav-content()
+
+        a(href="mailto:malviyapriyanka08.com").email-link +contact me
+
+        .mobile-nav-toggle: span
+
+
+script(type='text/javascript', src='https://code.jquery.com/jquery-2.2.4.js')
+

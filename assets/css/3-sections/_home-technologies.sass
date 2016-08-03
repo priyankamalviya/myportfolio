@@ -1,0 +1,90 @@
+section.articles#articles
+  background:
+    image: url(../img/design-bg.png)
+    repeat: repeat
+    position: center
+  .col-1
+      display: flex
+      align-items: center
+      margin-right: -50px //did this to fix margin right problem along the length in mobile view
+
+  .article-wrap
+    margin: -50px 0
+    +clearfix
+
+  .article-thumb
+      display: block
+      background:
+        size: cover
+        position: center
+      width: 25%
+      float: left
+      position: relative
+      overflow: hidden
+
+
+      &:after
+        content: ''
+        display: block
+        padding-top: 100%
+
+  .article-meta
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: transparentize(dodgerblue, 0.5)
+    color: white
+    padding: 10px
+    transform: translate(0%, 100%) scale(0.5)
+    transition: all 200ms ease-in-out
+    opacity: 0
+
+
+    .name
+      font-size: 18px
+      line-height: 1.2
+
+  .article-thumb:hover .article-meta
+    opacity: 1
+    transform: translate(0%, 0%) scale(1)
+
+
+  @media (max-width: 640px)
+      .desc-wrap
+        margin-top: 100px
+
+  @media (max-width: 999px) and (min-width: 640px)
+      .article-thumb
+        width: 33.33%
+
+/* tada effect*/
+@keyframes tada
+  0%
+    transform: scale3d(1, 1, 1)
+
+  10%, 20%
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+
+  30%, 50%, 70%, 90%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+
+  40%, 60%, 80%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+
+  100%
+    transform: scale3d(1, 1, 1)
+
+
+
+
+
+
+
+
+
+
+
+
+

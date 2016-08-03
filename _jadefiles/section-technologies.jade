@@ -1,0 +1,14 @@
+section.articles#articles
+    .flex.flex--center
+        .col-50
+            .article-wrap
+                |{% for post in site.posts %}
+                a(href="" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
+                    .article-meta
+                        .name {{post.title}}
+                 |{% endfor%}
+
+        .col-50.flex.flex--center.order-first
+            .col-1
+                .desc-wrap
+                    p.home-lead Some technologies I have worked with..

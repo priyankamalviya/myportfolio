@@ -22,6 +22,12 @@ section.articles#articles
       position: relative
       overflow: hidden
 
+      &.is-emph
+        animation-name: tada
+        animation-duration: 1s
+        animation-fill-mode: both
+        z-index: 1
+
 
       &:after
         content: ''
@@ -75,13 +81,6 @@ section.articles#articles
 
   100%
     transform: scale3d(1, 1, 1)
-
-
-
-
-
-
-
 
 
 

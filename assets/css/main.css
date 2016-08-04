@@ -699,6 +699,14 @@ section.articles#articles {
     float: left;
     position: relative;
     overflow: hidden; }
+    section.articles#articles .article-thumb.is-emph {
+      -webkit-animation-name: tada;
+              animation-name: tada;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      z-index: 1; }
     section.articles#articles .article-thumb:after {
       content: '';
       display: block;

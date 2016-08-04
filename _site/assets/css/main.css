@@ -820,14 +820,6 @@ section.youtube {
   color: white; }
   section.youtube .home-cta {
     color: #e20a0a; }
-  section.youtube .flex-video {
-    box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4); }
-    @media (max-width: 985px) {
-      section.youtube .flex-video {
-        -webkit-transform: scale(1);
-                transform: scale(1); } }
   section.youtube .project-image {
     background-image: url(../img/pixcel-feed.png);
     background-position: center;
@@ -836,6 +828,10 @@ section.youtube {
     box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.4);
             transform: scale(1.4); }
+    @media (max-width: 985px) {
+      section.youtube .project-image {
+        -webkit-transform: scale(1);
+                transform: scale(1); } }
   section.youtube .video-strip {
     position: absolute;
     top: 0;

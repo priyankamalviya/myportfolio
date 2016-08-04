@@ -828,6 +828,14 @@ section.youtube {
       section.youtube .flex-video {
         -webkit-transform: scale(1);
                 transform: scale(1); } }
+  section.youtube .project-image {
+    background-image: url(../img/pixcel-feed.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); }
   section.youtube .video-strip {
     position: absolute;
     top: 0;
@@ -976,7 +984,7 @@ input:focus {
 
 textarea:focus {
   outline: none;
-  border-color: lightgrey; }
+  border-color: black; }
 
 input[type="submit"] {
   background: black;

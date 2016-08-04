@@ -780,6 +780,8 @@ section.pixcel {
   section.pixcel .home-cta {
     background: #e20a0a;
     color: white; }
+  section.pixcel .home-lead {
+    color: black; }
   section.pixcel .project-image {
     background-image: url(../img/pixcel.png);
     background-position: center;

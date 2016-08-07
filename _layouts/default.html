@@ -5,14 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/main.css">
-        <!--<script   src="https://code.jquery.com/jquery-2.2.4.js"></script>
-        <script src="/assets/js/functions.js"></script>-->
+        {% if page.type =="post" %}{{ page.styles }}{% endif %}
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     </head>
     <body>
           {{ content }}
-
 
           {% if page.url == "/index.html" %}
           <script src="/assets/js/functions.js"></script>

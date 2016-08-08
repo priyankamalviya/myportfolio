@@ -558,7 +558,7 @@ hr {
     text-indent: 101%;
     white-space: nowrap;
     max-width: 135px;
-    background-image: url(/assets/img/pm.png);
+    background-image: url(../img/pm.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

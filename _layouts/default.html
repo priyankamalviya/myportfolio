@@ -8,13 +8,10 @@
         <link rel="stylesheet" href="assets/css/main.css">
         {% if page.type =="post" %}{{ page.styles }}{% endif %}
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="/assets/js/functions.js"></script>
+        <script src="assets/js/functions.js"></script>
     </head>
     <body>
           {{ content }}
-
-          {% if page.url == "/index.html" %}
-          <script src="/assets/js/functions.js"></script>
-          {% endif %}
+    
     </body>
 </html>

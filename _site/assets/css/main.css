@@ -781,7 +781,8 @@ section.pixcel {
     background: #e20a0a;
     color: white; }
   section.pixcel .home-lead {
-    color: black; }
+    color: black;
+    padding-top: 20px; }
   section.pixcel .project-image {
     background-image: url(../img/pixcel.png);
     background-position: center;
@@ -865,8 +866,10 @@ section.youtube {
           padding: 0px 20px 50px; } }
 
 section.foodforall {
-  background: lightgray;
-  color: black; }
+  background: lightgray; }
+  section.foodforall .home-lead {
+    color: black;
+    padding-top: 20px; }
   section.foodforall .home-cta {
     background: #e20a0a;
     color: white; }
